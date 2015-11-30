@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>plg_content_romancartwidget</name>
+	<author>Andy Gaskell @ SSOFB</author>
+	<creationDate>November 2015</creationDate>
+	<copyright>Copyright (C) 2015 SSOFB. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>ag@ssofb.co.uk</authorEmail>
+	<authorUrl>www.ssofb.co.uk</authorUrl>
+	<version>3.0.0</version>
+	<description>Content plugin to load RomanCart buy button widgets into the page. Usage like '{romancart 36}' with the number being the product id.
+    </description>
+	<files>
+		<filename plugin="romancartwidget">romancartwidget.php</filename>
+	</files>
+	<languages>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+                    name="show_widget" 
+                    type="radio" 
+                    default="0" 
+                    label="Show the RomanCart widget" 
+                    description="enable this to display the RomanCart widget"
+                    >
+                    <option value="0">Show</option>
+                    <option value="1">Hide</option>
+                </field>
+                <field 
+                    name="store_id" 
+                    type="text"
+                    label="RomanCart Store ID" 
+                    description="ID of your store in RomanCart"
+                    />                
+			</fieldset>
+		</fields>
+	</config>
+</extension>
